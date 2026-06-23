@@ -1,171 +1,283 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>Josh Mariya Portfolio</title>
 
-</style>
-<!DOCTYPE html><html lang="en">
+  
+<!DOCTYPE html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Josh Mariya Portfolio</title><style>
+<title>Josh Mariya Portfolio</title>
+
+<style>
 
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
+font-family:Arial,sans-serif;
 scroll-behavior:smooth;
 }
 
 body{
-font-family:Arial,sans-serif;
-background:#050816;
+background:#0f1115;
 color:white;
 }
 
-nav{
-background:#0b1120;
+header{
+background:#0b0d11;
 padding:20px;
-text-align:center;
 position:sticky;
 top:0;
+z-index:100;
+}
+
+nav{
+display:flex;
+justify-content:center;
+gap:20px;
 }
 
 nav a{
 color:white;
 text-decoration:none;
-margin:10px;
-font-size:18px;
 font-weight:bold;
 }
 
-header{
+.hero{
 text-align:center;
 padding:80px 20px;
+background:#171b21;
 }
 
-header h1{
+.hero h1{
 font-size:45px;
-color:#60a5fa;
 margin-bottom:15px;
 }
 
-header p{
-font-size:22px;
+.hero p{
+font-size:18px;
+color:#b8c0cc;
+}
+
+.tagline{
+margin-top:20px;
+color:#f59e0b;
+font-weight:bold;
+letter-spacing:2px;
+}
+
+section{
+padding:60px 20px;
+}
+
+.section-title{
+text-align:center;
+font-size:40px;
+margin-bottom:40px;
 }
 
 .card{
-background:#0f172a;
-width:90%;
-max-width:900px;
-margin:30px auto;
-padding:30px;
+background:#1a1d24;
+padding:25px;
 border-radius:20px;
-box-shadow:0 0 20px rgba(96,165,250,0.3);
+margin-bottom:25px;
+box-shadow:0 0 15px rgba(0,0,0,0.4);
 }
 
-.card h2{
-color:#60a5fa;
-margin-bottom:20px;
-font-size:35px;
+.card h3{
+color:#f59e0b;
+margin-bottom:10px;
 }
 
 .card p{
-font-size:18px;
-line-height:1.8;
-margin:10px 0;
+color:#c7c7c7;
+line-height:1.6;
 }
 
-.skills-box{
-background:#111827;
-padding:15px;
-margin:10px 0;
-border-radius:12px;
+.skills{
+display:grid;
+gap:20px;
+}
+
+.skill-box{
+background:#1a1d24;
+padding:20px;
+border-radius:15px;
+}
+
+.skill-box h3{
+color:#ffffff;
+margin-bottom:10px;
+}
+
+.contact-form{
+background:#1a1d24;
+padding:25px;
+border-radius:20px;
 }
 
 input,textarea{
 width:100%;
-padding:12px;
+padding:15px;
 margin-top:10px;
+margin-bottom:20px;
 border:none;
-border-radius:8px;
-font-size:16px;
+border-radius:10px;
+background:#2a2e38;
+color:white;
 }
 
 button{
-background:#2563eb;
+width:100%;
+padding:15px;
+background:#0d5b36;
 color:white;
 border:none;
-padding:12px 30px;
-margin-top:15px;
-border-radius:8px;
+border-radius:10px;
 font-size:18px;
-cursor:pointer;
+font-weight:bold;
 }
 
-button:hover{
-background:#1d4ed8;
+footer{
+text-align:center;
+padding:25px;
+background:#0b0d11;
+color:#aaa;
+margin-top:40px;
 }
 
-@media(max-width:768px){
+</style>
+</head>
 
-nav a{
-display:inline-block;
-margin:8px;
-font-size:16px;
-}
+<body>
 
-header h1{
-font-size:34px;
-}
-
-header p{
-font-size:18px;
-}
-
-.card h2{
-font-size:28px;
-}
-
-.card p{
-font-size:16px;
-}
-
-}
-
-</style></head><body><nav>
-<a href="#home">Home</a>
+<header>
+<nav>
 <a href="#about">About</a>
 <a href="#projects">Projects</a>
 <a href="#skills">Skills</a>
 <a href="#contact">Contact</a>
-</nav><header id="home">
-<h1>JOSH MARIYA</h1>
-<p>Learning | Creating | Exploring</p>
-</header><section class="card" id="about">
-<h2>About Me</h2>
+</nav>
+</header>
+
+<section class="hero">
+<h1>Josh Mariya</h1>
+
+<p>Third Year Electronics and Communication Engineering Student</p>
+
+<div class="tagline">
+Learning | Creating | Exploring
+</div>
+</section>
+
+<section id="about">
+<h2 class="section-title">About Me</h2>
+
+<div class="card">
 <p>
-Hi, I'm Josh Mariya, a Third Year Electronics and Communication Engineering student passionate about electronics, programming, web development, Arduino projects and embedded systems. I enjoy learning new technologies and building practical projects.
+Hi, I'm Josh Mariya, an Electronics and Communication Engineering student passionate about technology, programming and innovation. I enjoy learning new technologies and building creative projects.
 </p>
-</section><section class="card" id="projects">
-<h2>Projects</h2><div class="skills-box">
-<h3>Soil Moisture Detector using Arduino</h3>
-</div><div class="skills-box">
-<h3>Android Development</h3>
-</div><div class="skills-box">
-<h3>Website Creation</h3>
-</div><div class="skills-box">
-<h3>Arduino Simulation</h3>
-</div></section><section class="card" id="skills">
-<h2>Skills</h2><div class="skills-box">HTML</div>
-<div class="skills-box">CSS</div>
-<div class="skills-box">Python</div>
-<div class="skills-box">Arduino</div>
-<div class="skills-box">GitHub</div>
-<div class="skills-box">Android Development</div></section><section class="card" id="contact">
-<h2>Contact</h2><input type="text" placeholder="Full Name"><input type="email" placeholder="Email"><textarea rows="5" placeholder="Your Message"></textarea><button>Submit</button>
+</div>
 
-</section></body>
+</section>
+
+<section id="projects">
+
+<h2 class="section-title">Featured Projects</h2>
+
+<div class="card">
+<h3>ARDUINO PROJECT</h3>
+<h2>Soil Moisture Detector Using Arduino</h2>
+<br>
+<p>
+A smart system that detects soil moisture levels and alerts users when watering is required.
+</p>
+</div>
+
+<div class="card">
+<h3>ANDROID DEVELOPMENT</h3>
+<h2>Android App Development</h2>
+<br>
+<p>
+Developing mobile applications with modern user interfaces and functionality.
+</p>
+</div>
+
+<div class="card">
+<h3>WEB DEVELOPMENT</h3>
+<h2>Website Creation</h2>
+<br>
+<p>
+Designing and developing responsive websites using HTML and CSS.
+</p>
+</div>
+
+<div class="card">
+<h3>SIMULATION</h3>
+<h2>Arduino Simulation</h2>
+<br>
+<p>
+Creating and testing Arduino projects virtually before hardware implementation.
+</p>
+</div>
+
+</section>
+
+<section id="skills">
+
+<h2 class="section-title">Skills</h2>
+
+<div class="skills">
+
+<div class="skill-box">
+<h3>HTML</h3>
+<p>Creating website structures.</p>
+</div>
+
+<div class="skill-box">
+<h3>CSS</h3>
+<p>Styling responsive web pages.</p>
+</div>
+
+<div class="skill-box">
+<h3>Python</h3>
+<p>Programming and problem solving.</p>
+</div>
+
+<div class="skill-box">
+<h3>Arduino</h3>
+<p>Building embedded system projects.</p>
+</div>
+
+<div class="skill-box">
+<h3>GitHub</h3>
+<p>Managing and hosting projects.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2 class="section-title">Contact Me</h2>
+
+<div class="contact-form">
+
+<input type="text" placeholder="Your Name">
+
+<input type="email" placeholder="your@email.com">
+
+<textarea rows="6" placeholder="Your Message"></textarea>
+
+<button>Send Message</button>
+
+</div>
+
+</section>
+
+<footer>
+© 2026 Josh Mariya | All Rights Reserved
+</footer>
+
+</body>
 </html>
-  
-
