@@ -20,19 +20,17 @@ color:white;
 }
 
 nav{
-position:sticky;
-top:0;
 background:#12052e;
 padding:20px;
 text-align:center;
-z-index:1000;
+position:sticky;
+top:0;
 }
 
 nav a{
 color:white;
 text-decoration:none;
 margin:0 15px;
-font-size:18px;
 font-weight:bold;
 }
 
@@ -44,98 +42,63 @@ padding:80px 20px;
 .hero h1{
 font-size:50px;
 color:#9f8cff;
-margin-bottom:15px;
 }
 
 .hero p{
 font-size:22px;
-color:#d1d5db;
-}
-
-.profile-card{
-width:280px;
-margin:40px auto;
-background:#131129;
-padding:20px;
-border-radius:25px;
-box-shadow:0 0 20px rgba(159,140,255,.3);
-}
-
-.profile-card img{
-width:100%;
-border-radius:15px;
+margin-top:10px;
 }
 
 .section{
-background:#0d0b25;
 width:90%;
 margin:30px auto;
+background:#0d0b25;
 padding:30px;
-border-radius:25px;
-box-shadow:0 0 20px rgba(255,255,255,.05);
+border-radius:20px;
 }
 
 .section h2{
 color:#ff69b4;
 margin-bottom:20px;
-font-size:38px;
-}
-
-.section p{
-font-size:20px;
-line-height:1.8;
-}
-
-.interests li{
-font-size:22px;
-margin:15px 0;
 }
 
 .skill-card{
 background:#131129;
-padding:25px;
-border-radius:20px;
-margin:20px 0;
-border:1px solid rgba(255,255,255,.15);
+padding:20px;
+margin:15px 0;
+border-radius:15px;
+border:1px solid rgba(255,255,255,.1);
 }
 
 .skill-card h3{
 color:#9f8cff;
-font-size:32px;
 margin-bottom:10px;
-}
-
-.skill-card p{
-font-size:20px;
-color:#d1d5db;
 }
 
 input,textarea{
 width:100%;
 padding:15px;
 margin-top:10px;
-margin-bottom:20px;
+margin-bottom:15px;
 background:#131129;
+color:white;
 border:1px solid #444;
 border-radius:10px;
-color:white;
 }
 
 button{
 width:100%;
 padding:15px;
-border:none;
-border-radius:10px;
 background:#4f46e5;
 color:white;
-font-size:20px;
-font-weight:bold;
-cursor:pointer;
+border:none;
+border-radius:10px;
+font-size:18px;
 }
 
 footer{
 text-align:center;
-padding:30px;
+padding:20px;
 color:#aaa;
 }
 </style>
@@ -145,72 +108,63 @@ color:#aaa;
 
 <nav>
 <a href="#home">Home</a>
-<a href="#about">About Me</a>
-<a href="#interests">My Interests</a>
+<a href="#about">About</a>
+<a href="#projects">Projects</a>
 <a href="#skills">Skills</a>
 <a href="#contact">Contact</a>
 </nav>
 
 <section id="home" class="hero">
-
-<h1>JOSH MARIYA</h1>
-
-<p>
-Third Year Electronics and Communication Engineering Student
-</p>
-
-<div class="profile-card">
-<img src="https://via.placeholder.com/250x250.png?text=Josh+Mariya" alt="Profile">
-</div>
-
+<h1>Josh Mariya</h1>
+<p>Third Year Electronics and Communication Engineering Student</p>
 </section>
 
 <section id="about" class="section">
-
 <h2>About Me</h2>
 
 <p>
 Hello! I'm Josh Mariya, a Third Year Electronics and Communication Engineering student passionate about technology, innovation, and continuous learning.
-
-I enjoy working on Arduino projects, embedded systems, programming, and web development. Through projects, internships, and certifications, I constantly improve my technical and problem-solving skills.
-
-My interests include Artificial Intelligence, IoT, Microcontrollers, Embedded Systems, and Software Development. I enjoy transforming ideas into practical solutions and exploring emerging technologies.
-
+<br><br>
+I enjoy working on Arduino projects, embedded systems, web development, and programming. Through projects, internships, and certifications, I constantly improve my technical and problem-solving skills.
+<br><br>
 CGPA: 8.13
+</p>
+
+</section>
 
 <section id="projects" class="section">
 
-<h2>My Projects</h2>
+<h2>Projects</h2>
 
 <div class="skill-card">
 <h3>Soil Moisture Detector Using Arduino</h3>
 <p>
-An Arduino-based project that monitors soil moisture levels and alerts users when watering is required. This helps improve water efficiency and plant care.
+An Arduino-based system that monitors soil moisture levels and helps determine when plants need watering.
 </p>
 </div>
 
 <div class="skill-card">
 <h3>Portfolio Website</h3>
 <p>
-A personal portfolio website developed using HTML and CSS to showcase my skills, projects, certifications, and achievements.
+Designed and developed a personal portfolio website using HTML and CSS.
 </p>
 </div>
-
-<div class="skill-card">
+  <div class="skill-card">
 <h3>Arduino Simulation Projects</h3>
 <p>
-Designed and tested various Arduino circuits and sensor-based systems using simulation tools before implementing them in hardware.
+Created and tested multiple Arduino circuits and sensor applications using simulation tools.
 </p>
 </div>
 
 <div class="skill-card">
 <h3>Assistive Shopping Assistant</h3>
 <p>
-An AI-based project concept that helps users identify products, analyze features, and make informed shopping decisions.
+An AI-based project concept that helps users identify products and analyze features.
 </p>
 </div>
 
 </section>
+
 <section id="skills" class="section">
 
 <h2>Skills</h2>
@@ -245,38 +199,34 @@ An AI-based project concept that helps users identify products, analyze features
 <p>Database</p>
 </div>
 
-<div class="skill-card">
-<h3>Java</h3>
-<p>Development</p>
-</div>
-
-<div class="skill-card">
-<h3>Problem Solving</h3>
-<p>Analysis</p>
-</div>
-
 </section>
 
 <section id="contact" class="section">
 
 <h2>Contact</h2>
 
+<form>
+
 <label>Full Name</label>
-<input type="text">
+<input type="text" placeholder="Enter your name">
 
 <label>Email</label>
-<input type="email">
+<input type="email" placeholder="Enter your email">
 
 <label>Message</label>
-<textarea rows="5"></textarea>
+<textarea rows="5" placeholder="Enter your message"></textarea>
 
-<button>Submit</button>
+<button type="submit">Submit</button>
+
+</form>
 
 </section>
 
 <footer>
-© 2026 Josh Mariya | All Rights Reserved
+© 2026 Josh Mariya | Portfolio
 </footer>
 
 </body>
 </html>
+
+
