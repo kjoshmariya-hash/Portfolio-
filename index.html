@@ -5,222 +5,93 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Josh Mariya Portfolio</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
 <style>
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:'Poppins',sans-serif;
-scroll-behavior:smooth;
+font-family:Arial,sans-serif;
 }
 
 body{
-background:#081120;
+background:linear-gradient(135deg,#0f172a,#1e293b);
 color:white;
 }
 
 nav{
-position:fixed;
-top:0;
-left:0;
-width:100%;
-padding:18px 8%;
-display:flex;
-justify-content:space-between;
-align-items:center;
-background:rgba(0,0,0,0.4);
-backdrop-filter:blur(12px);
-z-index:1000;
+background:#111827;
+padding:15px;
+text-align:center;
 }
 
-.logo{
-font-size:28px;
-font-weight:700;
-background:linear-gradient(90deg,#00c6ff,#8b5cf6,#d946ef);
--webkit-background-clip:text;
--webkit-text-fill-color:transparent;
-}
-
-nav ul{
-display:flex;
-list-style:none;
-gap:25px;
-}
-
-nav ul li a{
+nav a{
 color:white;
 text-decoration:none;
-font-weight:500;
+margin:0 15px;
 }
 
 .hero{
-height:100vh;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
 text-align:center;
-padding:20px;
-background:linear-gradient(135deg,#0f172a,#1e1b4b,#312e81);
+padding:100px 20px;
+background:linear-gradient(135deg,#2563eb,#7c3aed);
 }
 
 .hero h1{
-font-size:72px;
-background:linear-gradient(90deg,#00c6ff,#8b5cf6,#d946ef);
--webkit-background-clip:text;
--webkit-text-fill-color:transparent;
+font-size:60px;
 }
 
 .hero p{
-font-size:22px;
+font-size:20px;
 margin-top:10px;
-color:#d1d5db;
-}
-
-.tagline{
-margin-top:20px;
-color:#fbbf24;
-font-weight:600;
-letter-spacing:2px;
 }
 
 .btn{
-margin-top:30px;
-padding:14px 35px;
-border:none;
-border-radius:12px;
-background:linear-gradient(90deg,#06b6d4,#8b5cf6,#d946ef);
+display:inline-block;
+margin-top:20px;
+padding:12px 25px;
+background:#06b6d4;
 color:white;
-font-size:16px;
-font-weight:600;
-cursor:pointer;
+text-decoration:none;
+border-radius:8px;
 }
 
 section{
-padding:100px 8%;
+padding:50px 20px;
+max-width:1000px;
+margin:auto;
 }
 
-.section-title{
+h2{
 text-align:center;
-font-size:48px;
-margin-bottom:60px;
-}
-
-.section-title::after{
-content:"";
-display:block;
-width:80px;
-height:4px;
-margin:10px auto;
-background:linear-gradient(90deg,#d946ef,#00c6ff);
-border-radius:10px;
-}
-
-.about-box{
-background:#111827;
-padding:35px;
-border-radius:20px;
-border:1px solid rgba(255,255,255,.08);
-}
-
-.projects{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:25px;
+margin-bottom:20px;
+color:#38bdf8;
 }
 
 .card{
-background:#111827;
-padding:25px;
-border-radius:20px;
-border:1px solid rgba(255,255,255,.08);
-transition:0.4s;
-}
-
-.card:hover{
-transform:translateY(-8px);
-box-shadow:0 0 25px rgba(139,92,246,.5);
-}
-
-.card h3{
-margin-bottom:10px;
-}
-
-.card p{
-color:#d1d5db;
-font-size:14px;
+background:#1e293b;
+padding:20px;
+margin:15px 0;
+border-radius:10px;
 }
 
 .skills{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
-gap:20px;
+display:flex;
+flex-wrap:wrap;
+gap:10px;
+justify-content:center;
 }
 
 .skill{
-background:#111827;
-padding:25px;
-border-radius:15px;
-text-align:center;
-border:1px solid rgba(255,255,255,.08);
-transition:.4s;
-}
-
-.skill:hover{
-box-shadow:0 0 20px rgba(0,198,255,.5);
-}
-
-.contact{
-background:#111827;
-padding:35px;
+background:#7c3aed;
+padding:10px 20px;
 border-radius:20px;
-}
-
-input,textarea{
-width:100%;
-padding:15px;
-margin-bottom:15px;
-background:#1f2937;
-border:none;
-border-radius:10px;
-color:white;
-}
-
-textarea{
-height:140px;
-resize:none;
 }
 
 footer{
 text-align:center;
-padding:30px;
-color:#9ca3af;
-}
-
-@media(max-width:768px){
-
-.hero h1{
-font-size:48px;
-}
-
-.hero p{
-font-size:18px;
-}
-
-.section-title{
-font-size:36px;
-}
-
-nav{
-padding:15px;
-}
-
-nav ul{
-gap:12px;
-font-size:14px;
-}
+padding:20px;
+background:#111827;
+margin-top:30px;
 }
 </style>
 </head>
@@ -228,111 +99,72 @@ font-size:14px;
 <body>
 
 <nav>
-<div class="logo">Josh Mariya</div>
-
-<ul>
-<li><a href="#about">About</a></li>
-<li><a href="#projects">Projects</a></li>
-<li><a href="#skills">Skills</a></li>
-<li><a href="#contact">Contact</a></li>
-</ul>
+<a href="#about">About</a>
+<a href="#projects">Projects</a>
+<a href="#skills">Skills</a>
+<a href="#contact">Contact</a>
 </nav>
 
-<section class="hero">
-
+<div class="hero">
 <h1>Josh Mariya</h1>
-
-<p>Third Year Electronics and Communication Engineering Student</p>
-
-<div class="tagline">
-Learning | Creating | Exploring
+<p>Third Year Electronics & Communication Engineering Student</p>
+<a href="#projects" class="btn">View Projects</a>
 </div>
-
-<button class="btn">View Projects</button>
-
-</section>
 
 <section id="about">
-
-<h2 class="section-title">About Me</h2>
-
-<div class="about-box">
-Hi, I'm Josh Mariya, an Electronics and Communication Engineering student passionate about technology, programming and innovation. I enjoy learning new technologies and building creative projects.
-<br><br>
-CGPA: 8.13 | KTU 2024 Scheme
+<h2>About Me</h2>
+<div class="card">
+I am a Third Year ECE student passionate about technology, programming, Arduino projects and web development.
 </div>
-
 </section>
 
 <section id="projects">
-
-<h2 class="section-title">Featured Projects</h2>
-
-<div class="projects">
+<h2>Projects</h2>
 
 <div class="card">
 <h3>Soil Moisture Detector Using Arduino</h3>
-<p>Smart irrigation monitoring system using Arduino and soil moisture sensor.</p>
+<p>Monitors soil moisture and helps automate irrigation.</p>
 </div>
 
 <div class="card">
-<h3>Arduino Simulation</h3>
-<p>Virtual testing and simulation of embedded projects before implementation.</p>
+<h3>Arduino Simulation Projects</h3>
+<p>Designed and tested various embedded systems projects.</p>
 </div>
 
 <div class="card">
-<h3>Website Development</h3>
-<p>Responsive websites developed using HTML and CSS.</p>
-</div>
-
-<div class="card">
-<h3>Android App Development</h3>
-<p>Mobile application design and development with modern interfaces.</p>
-</div>
-
+<h3>Portfolio Website</h3>
+<p>Personal website built using HTML and CSS.</p>
 </div>
 
 </section>
 
 <section id="skills">
-
-<h2 class="section-title">Skills</h2>
+<h2>Skills</h2>
 
 <div class="skills">
-
 <div class="skill">HTML</div>
 <div class="skill">CSS</div>
 <div class="skill">Python</div>
 <div class="skill">Arduino</div>
 <div class="skill">GitHub</div>
 <div class="skill">SQL</div>
-<div class="skill">Java</div>
-<div class="skill">Problem Solving</div>
-
 </div>
 
 </section>
 
 <section id="contact">
+<h2>Contact</h2>
 
-<h2 class="section-title">Contact Me</h2>
-
-<div class="contact">
-
-<input type="text" placeholder="Your Name">
-
-<input type="email" placeholder="Your Email">
-
-<textarea placeholder="Your Message"></textarea>
-
-<button class="btn">Send Message</button>
-
+<div class="card">
+<p>Email: youremail@example.com</p>
+<p>LinkedIn: Add your LinkedIn link</p>
+<p>GitHub: Add your GitHub link</p>
 </div>
 
 </section>
 
 <footer>
-© 2026 Josh Mariya | All Rights Reserved
+© 2026 Josh Mariya | Portfolio
 </footer>
 
 </body>
